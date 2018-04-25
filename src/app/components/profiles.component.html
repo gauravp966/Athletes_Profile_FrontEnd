@@ -1,0 +1,79 @@
+
+<hr>
+
+<form class = "well bg-light " (submit)="addPosts()" style="margin-left:50px" >
+  <div class="form-group col-md-6 ">
+    <div *ngIf="slide == 'slide1'">
+      <h3>Basic Info</h3><br/>
+      <label>Name </label>
+      <input type="text" class="form-control" [(ngModel)]="name" name="name"/><br/>
+      <label>Sports </label>
+      <select type="text" class = "form-control" [(ngModel)]="sports" name="sports" placeholder="Select">
+        <option>American Football</option>
+        <option>Aquatics</option>
+        <option>Archery</option>
+        <option>Automobile Racing</option>
+        <option>Badminton</option>
+        <option>Beach Volleyball</option>
+        <option>Bobsleigh</option>
+        <option>Body Building</option>
+        <option>Baseball</option>
+        <option>Basketball</option>
+        <option>Boxing</option>
+        <option>Cricket</option>
+        <option>Cross Country Running</option>
+        <option>Cross Country Skiing</option>
+        <option>Curling</option>
+        <option>Cycling</option>
+        <option>Darts</option>
+        <option>Decathlon</option>
+        <option>Down Hill Skiing</option>
+        <option>eSports</option>
+        <option>Equestrianism</option>
+        <option>Fencing</option>
+        <option>Field Hockey</option>
+        <option>Figure Skating</option>
+        <option>Golf</option>
+        <option>Gymnastics</option>
+        <option>Ice Hockey</option>
+        <option>Martial Arts</option>
+        <option>Mixed Martial Arts</option>
+        <option>Modern Pentathlon</option>
+        <option>Motorcycle Racing</option>
+        <option>Netball</option>
+        <option>Polo</option>
+        <option>Racquetball</option>
+        <option>Rowing</option>
+        <option>Rugby</option>
+        <option>Sailing</option>
+        <option>Shooting</option>
+        <option>Skateboarding</option>
+        <option>Skeet Shooting</option>
+        <option>Skeleton</option>
+        <option>Snow Boarding</option>
+        <option>Soccer (Football)</option>
+        <option>Softball</option>
+        <option>Squash</option>
+        <option>Surfing</option>
+        <option>Swimming</option>
+        <option>Tennis</option>
+        <option>Track and Field</option>
+      </select>
+      <br/>
+      <label>Nationality </label>
+      <input type="text" class = "form-control" [(ngModel)]="nationality" name="nationality"/><br/>
+      <label>Gender </label>
+      <select type="text" class = "form-control" [(ngModel)]="gender" name="gender">
+        <option>Female</option>
+        <option>Male</option>
+        <option>Others</option>
+      </select><br/>
+
+      <button type="submit" class="btn btn-secondary btn-lg" style="margin: 10px">Submit</button>
+      <br/><br/><br/>
+
+    </div>
+
+  </div>
+
+</form>

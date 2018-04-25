@@ -1,0 +1,9 @@
+<div class="jumbotron">
+  <h3>All Profiles:</h3>
+</div>
+<div class="jumbotron" *ngFor="let post of posts" style="margin:50px 50px 50px 50px">
+  <p class="h4">{{post.name}}</p><br/>
+  <p><a class="h6">Sports:</a> {{post.sports}}</p>
+  <p><a class="h6">Nationality:</a> {{post.nationality}}</p>
+  <p><a class="h6">Gender:</a> {{post.gender}}</p>
+</div>
